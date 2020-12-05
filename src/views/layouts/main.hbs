@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts App</title>
+    {{!-- Bootstrap v4.5.0 --}}
+    {{!-- https://bootswatch.com/cosmo theme Cosmo --}}
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    {{!-- Font Awesome 5.13.0 --}}
+    <link rel="stylesheet" href="/font-awesome/all.css">
+    {{!-- Custom css --}}
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    {{>nav}}
+        <main class="container p-4">
+            {{>messages}}
+            {{>errors}}
+            {{{body}}}
+        </main>
+    {{!-- <p>footer</p> --}}
+    {{!-- Scripts Bootstrap --}}
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
